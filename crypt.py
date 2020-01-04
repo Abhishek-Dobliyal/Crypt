@@ -17,7 +17,7 @@ while True:
         except ValueError:
             print("\nOnly Integers Allowed!!!\n")
 
-    alpha = string.printable
+    alpha = " " + string.printable
     # print(alpha)
     if choice == 1 or choice ==0o1:
         print("\n"+85*"*"+"\n")
@@ -74,11 +74,9 @@ while True:
             decoded+=d_new_char
             # decoded = decoded.strip()
         
-        decoded = decoded.replace("0", " ")   # The 0 displayed in the decoded string is actually a whitespace
         print(f"\nYour Decrypted Message is '{decoded}'")  # The special symbols would be displayed as normal alphabets :(
         print("\n"+85*"*"+"\n")
-        print("\nNOTE: All the zeroes(0) in the Message have been replaced by whitespace(' ')!")
-
+     
     elif choice==3 or choice==0o3:
         exit()
     else:
